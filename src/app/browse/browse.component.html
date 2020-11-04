@@ -1,0 +1,12 @@
+<ActionBar>
+    <Label text=""></Label>
+</ActionBar>
+
+<StackLayout class="page__content p-5" style="background-color: aliceblue;">
+  
+    <Image [src]="imageSrc" 
+    [width]="previewSize" [height]="previewSize" stretch="aspectFit"></Image>
+  
+    <Button [isEnabled]="imageSrc !== null" text="Clear Selection" (tap)="on.delete()" class="-primary"></Button>
+    <Button text="Launch Image Picker" (tap)="on.launch()" class="-primary"></Button>
+</StackLayout>
